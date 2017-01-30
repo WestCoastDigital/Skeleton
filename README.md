@@ -32,6 +32,11 @@ Skeleton is lightweight and simple. It styles only raw HTML elements (with a few
 - It's a starting point, not a UI framework
 - No compiling or installing...just vanilla CSS
 
+## Responsive Tables
+To create responsive tables.
+- Add the th values to the td elements as data-column attribute
+- EG ```<td data-column="First Name">James</td>```
+- See a full example here <a href="http://codepen.io/CarassiusPro/pen/zNpBKw">http://codepen.io/CarassiusPro/pen/zNpBKw</a>
 
 ## Browser support
 
