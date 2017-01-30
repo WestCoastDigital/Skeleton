@@ -303,7 +303,9 @@ ol ul {
 li {
   margin-bottom: 1rem; }
 ul.nostyle, ol.nostyle { list-style: none; }
-ul.horizontal li, ol.horizontal li { display: inline; }
+ul.horizontal.nostyle li, ol.horizontal.nostyle li { display: inline; margin-right: 2.5rem;}
+ul.horizontal li, ol.horizontal li { float: left; margin-right: 2.5rem;}
+ul.horizontal, ol.horizontal { clear: both; }
   
 
 /* Code
