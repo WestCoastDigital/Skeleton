@@ -302,7 +302,9 @@ ol ul {
   font-size: 90%; }
 li {
   margin-bottom: 1rem; }
-
+ul.nostyle, ol.nostyle { list-style: none; }
+ul.horizontal li, ol.horizontal li { display: inline; }
+  
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
