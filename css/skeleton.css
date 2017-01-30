@@ -374,6 +374,9 @@ only screen and (max-width: 760px),
 		content: attr(data-column);
 		font-weight: bold;
 	}
+	th:first-child, td:first-child {
+	    padding-left: 50%;
+	}
 
 }
 
