@@ -306,7 +306,6 @@ ul.nostyle, ol.nostyle { list-style: none; }
 ul.horizontal.nostyle li, ol.horizontal.nostyle li { display: inline; margin-right: 2.5rem;}
 ul.horizontal li, ol.horizontal li { float: left; margin-right: 2.5rem;}
 ul.horizontal, ol.horizontal { clear: both; }
-  
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -337,48 +336,50 @@ td:first-child {
 th:last-child,
 td:last-child {
   padding-right: 0; }
-
+.striped>tbody>tr:nth-of-type(odd) {
+     background-color: #E1E1E1;
+  }
  /* Responsive tables */
-@media 
+@media
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 
-	table { 
-	  	width: 100%; 
+	table {
+	  	width: 100%;
 	}
 
-	table, thead, tbody, th, td, tr { 
-		display: block; 
+	table, thead, tbody, th, td, tr {
+		display: block;
 	}
 
-	thead tr { 
+	thead tr {
 		position: absolute;
 		top: -9999px;
 		left: -9999px;
 	}
-	
+
 	tr { border: 1px solid #E1E1E1; }
-	
-	td { 
+
+	td {
 		border: none;
-		border-bottom: 1px solid #E1E1E1; 
+		border-bottom: 1px solid #E1E1E1;
 		position: relative;
-		padding-left: 50%; 
+		padding-left: 50%;
 	}
 
 	td:before {
 		position: absolute;
 		top: 6px;
 		left: 6px;
-		width: 45%; 
-		padding-right: 10px; 
+		width: 45%;
+		padding-right: 10px;
 		white-space: nowrap;
 		content: attr(data-column);
 		font-weight: bold;
 	}
-	th:first-child, td:first-child {
-	    padding-left: 50%;
-	}
+  th:first-child, td:first-child {
+    padding-left: 50%;
+  }
 
 }
 
